@@ -1,0 +1,52 @@
+.background-container {
+    display: flex;
+    justify-content: flex-end; /* Flytta innehållet till höger */
+    align-items: center; /* Centrera vertikalt om nödvändigt */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.background-book {
+    position: absolute; /* Positioning it absolutely within the container */
+    top: 0; /* Align to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align to the left */
+    width: 80%; /* Full width */
+    height: auto; 
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    
+}
+
+.content {
+   width: 50%;
+    background-color: black;
+       justify-content: flex-end;
+       align-items: center;
+       position: relative;
+       height: 100vh;
+       overflow: hidden;
+       width: 50%;
+       margin-left: 0 auto;
+       margin-right: 0 auto;
+    margin-top: 0px;
+       height: auto; 
+    padding: 0px 35px;
+    h2 {
+    font-size: 54px;
+    margin-bottom: 10px;
+    
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* Change text color for contrast, if necessary */
+}
+
+

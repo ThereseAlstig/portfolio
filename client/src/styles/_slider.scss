@@ -1,0 +1,34 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Justera beroende på vad som passar din design */
+    height: 550px;    /* Justera beroende på dina bilder */
+    overflow: hidden;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider img {
+    position: absolute;
+    width: auto;
+    height: 550px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 0px;
+    margin-right: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}

@@ -1,0 +1,46 @@
+.MyName{
+    text-align: center;
+    font-size: 130px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 22px;
+    padding: 10px;
+   
+}
+
+@keyframes typing{
+    from {with:0;}
+    to{width: 100%;}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent;}
+    50% {border-color: white;}
+}
+
+.typing-animation {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    padding: 25px;
+    width: 0;
+    animation: typing 4s steps(20, end) forwards, blink-caret 0.95s step-end infinite;
+  }
+
+  body.home-page header, 
+body.home-page footer {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .MyName {
+        font-size: 80px;
+    }
+    .typing-animation {
+        font-size: 20px;
+    }
+}

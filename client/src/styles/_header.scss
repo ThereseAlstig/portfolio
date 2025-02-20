@@ -1,0 +1,123 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+   
+}
+
+h1{
+    margin: 0;
+
+}
+
+.headerContainer{
+    width: 100%;
+ 
+    color: white;
+    margin: 0px;
+    box-shadow: 0 4px 8px rgba(7, 6, 6, 0.2); 
+
+    
+
+}
+
+.links {
+    display: flex;               /* Flexbox för layout */
+    flex-direction: column;     /* Lägg länkarna vertikalt */
+    align-items: flex-start;    /* Justera till vänster */
+    padding: 20px;              /* Lite padding runt menyn */
+}
+
+.link {
+    
+    list-style: none;
+    color: rgb(252, 251, 251);
+
+    text-decoration: none;
+   
+    width: auto;
+    height: 50px;
+    text-align: center;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;   
+    font-weight: 600;
+    
+ 
+  
+}
+
+.container {
+    display: flex;               /* Använd flexbox för layout */
+    height: 100vh;              /* Full höjd på viewporten */
+}
+
+.header2{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.linksMedia {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    color: white;
+ 
+    & > a svg {
+      font-size: 2rem; 
+      transition: transform 0.2s;
+      padding-right:15px; 
+      color: white;
+  
+      &:hover {
+        transform: scale(1.3); 
+      }
+    }
+  }
+  
+
+  .hover {
+   
+    transition: transform 0.2s;
+ 
+
+    &:hover {
+      transform: scale(1.3); 
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .links {
+      flex-direction: row; 
+      justify-content: center; 
+      width: 100%; 
+      padding: 0; 
+    }
+  
+    .link {
+      width: 100%; 
+      height: 50px; 
+      justify-content: center; 
+      padding: 0 10px; 
+    }
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      
+    }
+  .linksMedia{
+    margin-top: 10px;
+  }
+ 
+  }
