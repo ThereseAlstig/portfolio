@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
 export const Portfolio =()=>{
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    console.log(currentIndex);
 
     const projects = [
         {

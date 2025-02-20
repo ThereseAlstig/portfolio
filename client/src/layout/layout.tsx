@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom"
-import { Footer } from "./footer"
+
 import { Header } from "./header"
 import { useEffect } from "react";
 import BackgroundEffect from "../components/backgroundEffects";

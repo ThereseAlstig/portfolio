@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import { Book } from "../components/book"
+
 import { useEffect, useState } from "react";
 
 export const AboutMe =()=>{
