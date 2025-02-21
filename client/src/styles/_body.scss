@@ -112,6 +112,7 @@ width: 100%;
         align-items: center;
         justify-items: center;
         width: 100%;
+        height: auto!important;
     }
 
     .slider, .content {
@@ -123,6 +124,8 @@ width: 100%;
      /* Ser till att bilden inte blir för smal */
         height: auto;
         max-height: 300px;
+        margin: 0;
+        margin-right: 0px!important;
     }
     .slider{
         margin-left: auto;

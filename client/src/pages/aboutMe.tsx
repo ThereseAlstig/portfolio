@@ -22,9 +22,6 @@ export const AboutMe =()=>{
 
     return(
     <div className='container'>
-    
-     
-        
         <div className="slider">
                     {images.map((src, index) => (
                         <img
