@@ -13,7 +13,7 @@ export const AboutMe =()=>{
 
     useEffect(() => {
     const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setCurrentImageIndex((prevIndex: number) => (prevIndex + 1) % images.length);
     }, 4000); // 2000 ms = 2 sekunder
 
     return () => clearInterval(interval); // Rensa intervallet när komponenten avmonteras
