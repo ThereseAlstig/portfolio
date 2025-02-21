@@ -5,10 +5,10 @@ export const AboutMe =()=>{
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const images = [
-        "./public/jag.jpg",
-        "./public/sprak.jpg",
-        "./public/koda.jpg",
-        "./public/debuggin.jpg"
+        "./jag.jpg",
+        "./sprak.jpg",
+        "./koda.jpg",
+        "./debuggin.jpg"
     ];
 
     useEffect(() => {
