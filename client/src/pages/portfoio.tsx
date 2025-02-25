@@ -8,13 +8,13 @@ export const Portfolio =()=>{
     console.log(currentIndex);
 
     const projects = [
-        {
-            url: "/klaraKlassikern",
-            image: "/klaraKlassikern.png",
-            title: "Projekt 1",
-            h2: "Klara Klassiker – E-handelsplattform med sociala funktioner",
-            p: "Klara Klassiker är en modern och interaktiv e-handelsplattform utvecklad med WooCommerce i WordPress, skapad som en del av ett skolprojekt med fokus på både köpupplevelse och social interaktion. Förutom en smidig och responsiv e-handel kan användare med konto dela tips, skapa egna tipskollektioner och inspirera andra. Plattformen erbjuder en personlig shoppingupplevelse, där kunder kan spara sina favoriter, bygga samlingar och interagera med andra användare. Projektet kombinerar intuitiv användarvänlighet med engagerande sociala funktioner, vilket skapar en dynamisk och inspirerande shoppingmiljö."
-        },
+        // {
+        //     url: "/klaraKlassikern",
+        //     image: "/klaraKlassikern.png",
+        //     title: "Projekt 1",
+        //     h2: "Klara Klassiker – E-handelsplattform med sociala funktioner",
+        //     p: "Klara Klassiker är en modern och interaktiv e-handelsplattform utvecklad med WooCommerce i WordPress, skapad som en del av ett skolprojekt med fokus på både köpupplevelse och social interaktion. Förutom en smidig och responsiv e-handel kan användare med konto dela tips, skapa egna tipskollektioner och inspirera andra. Plattformen erbjuder en personlig shoppingupplevelse, där kunder kan spara sina favoriter, bygga samlingar och interagera med andra användare. Projektet kombinerar intuitiv användarvänlighet med engagerande sociala funktioner, vilket skapar en dynamisk och inspirerande shoppingmiljö."
+        // },
         {
             url: "/AdventureRouter",
             image: "/adventureRouter.png",  // Korrigerad bildväg
