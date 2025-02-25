@@ -6,9 +6,9 @@ export const AboutMe =()=>{
 
     const images = [
         "./jag.jpg",
-        "./sprak.jpg",
-        "./koda.jpg",
-        "./debuggin.jpg"
+        // "./sprak.jpg",
+        // "./koda.jpg",
+        // "./debuggin.jpg"
     ];
 
     useEffect(() => {
