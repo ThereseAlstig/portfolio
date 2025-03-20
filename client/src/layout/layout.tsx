@@ -1,13 +1,16 @@
 import { Outlet, useLocation } from "react-router-dom"
 
 import { Header } from "./header"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import BackgroundEffect from "../components/backgroundEffects";
+import { CSSTransition, SwitchTransition} from "react-transition-group";
+
 
 export const Layout =()=>{
 
   
         const location = useLocation();
+        const nodeRef = useRef(null);
       
         useEffect(() => {
           if (location.pathname === '/') {
@@ -27,8 +30,15 @@ export const Layout =()=>{
 </header>
 <BackgroundEffect/>
 <main>
-    <Outlet/>
-</main>
+        {/* 🚀 SwitchTransition möjliggör smidiga byten mellan sidor */}
+        <SwitchTransition>
+          <CSSTransition key={location.pathname} classNames="page"   nodeRef={nodeRef}  timeout={500}>
+          <div ref={nodeRef}>
+              <Outlet />
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
+      </main>
 
 
 </>

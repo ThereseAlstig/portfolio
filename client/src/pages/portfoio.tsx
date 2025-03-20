@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import LanguageContext from "../context/LanguageContext";
+import { Link } from "react-router-dom";
 
 
 
@@ -49,13 +50,11 @@ export const Portfolio =()=>{
           
               
                     {projects.map((project, index) => (
-                        <a
-                            key={index}
-                            href={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="project-card"
-                        >
+                        <Link
+                        key={index}
+                        to={project.url} // Byt från href till to
+                        className="project-card"
+                      >
                             <div className= "prooject-content">
                             <div className="image-container">
                             <img src={project.image} alt={project.title[language]} />
@@ -65,7 +64,7 @@ export const Portfolio =()=>{
                                 <h2>{project.h2[language]}</h2>
                                 <p>{project.p[language]}</p>
                                 </div></div>
-                        </a>
+                                </Link>
                     ))}
                   
 

@@ -11,8 +11,11 @@ import { LanguageProvider } from './context/LanguageContext.tsx'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <LanguageProvider>
-  <RouterProvider router={Router}></RouterProvider>
+  <RouterProvider router={Router}>
+   
+  </RouterProvider>
 </LanguageProvider>
 )

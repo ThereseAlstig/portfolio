@@ -1,7 +1,7 @@
 export const FilmPresentation = () => {
 
     return(
-        <div>
+        <div className="">
             <h1>Film Presentation</h1>
 
             <video controls width="80%">

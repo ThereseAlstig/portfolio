@@ -73,8 +73,7 @@
 /* Responsiv layout */
 @media (max-width: 768px) {
     .container2 {
-        flex-direction: column; /* Staplar projekten på mobil */
-        align-items: center;
+        display: inline-block;
         max-width: 100%;
         padding: 20px;
         height: auto;
