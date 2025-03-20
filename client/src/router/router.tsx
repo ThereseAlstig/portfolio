@@ -6,6 +6,7 @@ import { Portfolio } from "../pages/portfoio";
 import { Contact } from "../pages/contact";
 import { AdventureRouter } from "../pages/adventureRouter";
 import { KlaraKlassikern } from "../pages/klaraKlassikern";
+import { TechStack } from "../pages/techStack";
 
 const Router = createBrowserRouter([
     {
@@ -30,6 +31,9 @@ const Router = createBrowserRouter([
                 },{
                     path: "/klaraKlassikern",
                     element: <KlaraKlassikern/>
+                },{
+                    path: "/techStack",
+                    element: <TechStack/>
                 }
 
             ]
