@@ -36,7 +36,7 @@ export const Layout =()=>{
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.9, ease: "easeInOut"  }}
-            style={{ position: "absolute", width: "100%" }}
+            style={{ position: "relative", width: "100%" }}
           >
             <Outlet />
           </motion.div>
