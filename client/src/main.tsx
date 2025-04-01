@@ -2,11 +2,11 @@
 import ReactDOM from 'react-dom/client'
 
 import './index.scss'
-import { RouterProvider} from 'react-router-dom'
-import Router from './router/router.tsx'
+import { BrowserRouter} from 'react-router-dom'
+
 import './styles/main.scss'
 import { LanguageProvider } from './context/LanguageContext.tsx'
-
+import App from './App.tsx'
 
 
 
@@ -14,8 +14,8 @@ import { LanguageProvider } from './context/LanguageContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <LanguageProvider>
-  <RouterProvider router={Router}>
-   
-  </RouterProvider>
-</LanguageProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </LanguageProvider>
 )
