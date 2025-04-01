@@ -28,7 +28,7 @@ export const Layout =()=>{
   <header className="headerContainer">
      {!isHomePage && <Header />} 
   </header>
-  <main style={{ position: "relative", overflow: "hidden" }}>
+  <main style={{ position: "relative", overflow: "auto" }}>
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
@@ -36,7 +36,7 @@ export const Layout =()=>{
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.9, ease: "easeInOut"  }}
-            style={{ position: "relative", width: "100%" }}
+            style={{ position: "relative", width: "100%", minHeight: "100vh"  }}
           >
             <Outlet />
           </motion.div>
